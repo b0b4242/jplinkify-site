@@ -1,21 +1,79 @@
 
 <section class="content-wrap">
   <div class="form-card">
-    <h2>Ta demande de service</h2>
-    <p>Décris ton besoin pour trouver le bon professionnel.</p>
+    <div class="section-heading">
+      <h2>Faire une demande</h2>
+      <p>
+        Décris ton besoin et trouve le bon professionnel
+        grâce à JP Linkify.
+      </p>
+    </div>
 
-    <script
-      src="https://assets.formester.com/widget/standard.js"
-      type="module">
-    </script>
+    <div class="formester-container">
+      <script
+        src="https://assets.formester.com/widget/standard.js"
+        type="module">
+      </script>
 
-    <formester-standard-form
-      set-auto-height="true"
-      height="100%"
-      width="100%"
-      id="8Coht7mZm"
-      url="https://yaldezuw.formester.com/f/8Coht7mZm">
-    </formester-standard-form>
-
+      <formester-standard-form
+        set-auto-height="true"
+        height="100%"
+        width="100%"
+        id="8Coht7mZm"
+        url="https://yaldezuw.formester.com/f/8Coht7mZm">
+      </formester-standard-form>
+    </div>
   </div>
 </section>
+
+<style>
+  .content-wrap {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .form-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #e5eaf2;
+    box-shadow: 0 8px 30px rgba(0, 50, 120, 0.08);
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .section-heading h2 {
+    color: #0055ff;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .section-heading p {
+    color: #64748b;
+    line-height: 1.6;
+  }
+
+  .formester-container {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  formester-standard-form {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    .content-wrap {
+      padding: 12px;
+      margin: 20px auto;
+    }
+
+    .form-card {
+      padding: 18px;
+    }
+  }
+</style>
