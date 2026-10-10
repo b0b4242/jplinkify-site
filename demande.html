@@ -29,9 +29,7 @@
   </section>
 
   <section class="content-wrap">
-    <form class="form-card" name="demande" method="POST" action="merci.html" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="demande">
-      <p hidden><label>Ne pas remplir : <input name="bot-field"></label></p>
+    <form class="form-card" data-demo-form>
       <h2>Ton besoin</h2>
       <p>Les champs marqués d'un * sont obligatoires.</p>
       <div class="form-grid">
@@ -121,7 +119,8 @@
           </label>
         </div>
       </div>
-      <button class="button primary" type="submit">Envoyer ma demande <span>→</span></button>
+      <div class="form-note">Démo : ce formulaire n'est pas encore connecté à un système de réception. N'entre pas de renseignements personnels réels pour le moment.</div>
+      <button class="button primary" type="submit">Vérifier le formulaire <span>→</span></button>
       <div class="form-status" role="status" aria-live="polite"></div>
     </form>
   </section>
