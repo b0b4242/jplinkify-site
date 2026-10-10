@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0055ff">
+  <title>Contact — JP Linkify</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html"><span class="brand-mark">JP<span>.</span></span><span class="brand-name">JP Linkify<small>Des idées aux bonnes connexions</small></span></a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="index.html">Accueil</a>
+    <a href="comment-ca-marche.html">Comment ça marche</a>
+    <a href="demande.html">Faire une demande</a>
+    <a href="partenaires.html">Devenir partenaire</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <span class="eyebrow">UNE QUESTION?</span>
+    <h1>Entrons en <span class="gradient-text">contact.</span></h1>
+    <p>Une question sur le fonctionnement, une idée d'amélioration ou un intérêt pour le projet? Utilise le formulaire ci-dessous.</p>
+  </section>
+
+  <section class="content-wrap">
+    <div class="contact-grid" style="margin-bottom:30px">
+      <article class="info-card">
+        <span>💡</span>
+        <h3>Tu as une idée?</h3>
+        <p>Partage tes suggestions pour améliorer JP Linkify ou ajouter de nouvelles catégories de services.</p>
+      </article>
+      <article class="info-card">
+        <span>🤝</span>
+        <h3>Tu veux collaborer?</h3>
+        <p>Si tu offres un service ou souhaites contribuer au projet, visite notre page partenaires.</p>
+        <p style="margin-top:15px"><a class="button secondary" href="partenaires.html">Devenir partenaire →</a></p>
+      </article>
+    </div>
+
+    <form class="form-card" name="contact" method="POST" action="merci.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Ne pas remplir : <input name="bot-field"></label></p>
+      <h2>Écris-nous</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="contact-name">Nom *</label>
+          <input id="contact-name" name="name" autocomplete="name" required placeholder="Ton nom">
+        </div>
+        <div class="field">
+          <label for="contact-email">Courriel *</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="toi@exemple.com">
+        </div>
+        <div class="field full">
+          <label for="subject">Sujet *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choisir un sujet</option>
+            <option>Question générale</option>
+            <option>Suggestion ou idée</option>
+            <option>Partenariat</option>
+            <option>Problème technique</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required minlength="5" placeholder="Comment pouvons-nous t'aider?"></textarea>
+        </div>
+        <div class="field full">
+          <label class="check-field">
+            <input type="checkbox" name="consent" required>
+            <span>J'accepte que mes renseignements soient utilisés pour répondre à mon message. *</span>
+          </label>
+        </div>
+      </div>
+      <button class="button primary" type="submit">Envoyer mon message <span>→</span></button>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="brand footer-brand" href="index.html"><span class="brand-mark">JP<span>.</span></span><span class="brand-name">JP Linkify<small>Des idées aux bonnes connexions</small></span></a>
+  <div class="footer-links"><a href="index.html">Accueil</a><a href="comment-ca-marche.html">Fonctionnement</a><a href="demande.html">Faire une demande</a><a href="partenaires.html">Partenaires</a></div>
+  <p>© <span data-year></span> JP Linkify.</p>
+</footer>
+</body>
+</html>
